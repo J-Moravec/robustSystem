@@ -1,0 +1,16 @@
+Package: robustSystem
+Title: Catch output from system2.
+Version: 1.0
+Authors@R: person("Jiří", "Moravec", email = "j.moravec@mail.muni.cz",
+                  role = c("aut", "cre"))
+Description: Base system2 enable to catch either exit code, stdout or stderr.
+    Or both stdout and stderr output combined. In some situation, you
+    would like to catch stderr or exit code and based on that process or
+    not process stdout at all. This is solved by robust_system, which catch exit
+    code, stdout and stderr independently and return them in list.
+Depends:
+    R (>= 3.3.1)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
