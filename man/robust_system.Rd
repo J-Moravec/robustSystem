@@ -29,6 +29,10 @@ function, it is deleted as well.}
 
 \item{...}{other parameters passed to \code{system2}.}
 }
+\value{
+list with \code{stdout}, \code{sderr}, exit code and if
+\code{keep_temp=TRUE} path to temporary files.
+}
 \description{
 Function \code{robust_system} provide easy way how to catch stdout, stderr and
 exit status from external application. It builds on \code{base::system2}
@@ -50,6 +54,6 @@ after itself, but might be problematic if used in parallel.
 
 With \code{stdout_read} and \code{stderr_read}, you can pass additional
 parameters to \code{readLines} function, should as \code{warn=TRUE}, as
-\code{readLines} throw warning whenever line doesn't end with newline.
+\code{readLines} throw warning whenever line doesn't end with a newline.
 }
 

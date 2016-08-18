@@ -36,6 +36,11 @@
 #' @param stderr_read parameters to be passed to \code{readLines} function of
 #'  \code{stderr}
 #' @param ... other parameters passed to \code{system2}.
+#' 
+#' @return list with \code{stdout}, \code{sderr}, exit code and if
+#' \code{keep_temp=TRUE} path to temporary files.
+#'
+#' @export
 robust_system = function(command, args=character(), dir=NULL,
                          keep_temp=FALSE, stdout_read=list(),
                          stderr_read=list(), ...){
