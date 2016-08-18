@@ -21,3 +21,5 @@ $stdout
 [1] "DESCRIPTION" "LICENSE"     "man"         "NAMESPACE"   "R"          
 [6] "README.md" 
 ```
+
+Inspired by [these](http://stackoverflow.com/questions/7014081/capture-both-exit-status-and-output-from-a-system-call-in-r) stackoverflow answers.
